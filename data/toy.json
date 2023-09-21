@@ -1,0 +1,95 @@
+[
+    {
+        "name": "Chess set",
+        "labels": [
+            "Art"
+        ],
+        "price": 45.5,
+        "_id": "vT7yd",
+        "createdAt": 1695295260040,
+        "msgs": [
+            "Hello"
+        ],
+        "inStock": true
+    },
+    {
+        "name": "Gilad's Action figure",
+        "price": 25.35,
+        "labels": [
+            "Doll",
+            "Puzzle"
+        ],
+        "createdAt": 1695127249264,
+        "inStock": false,
+        "_id": "A103",
+        "msgs": [
+            "Hello"
+        ]
+    },
+    {
+        "name": "Hula Hoop",
+        "labels": [
+            "Art",
+            "Baby"
+        ],
+        "price": 24.99,
+        "_id": "iKtP4",
+        "createdAt": 1695295388473,
+        "msgs": [
+            "Hello"
+        ],
+        "inStock": true
+    },
+    {
+        "name": "Play Set",
+        "labels": [
+            "On wheels",
+            "Box game"
+        ],
+        "price": 44.99,
+        "_id": "hNYc5",
+        "createdAt": 1695231510913,
+        "inStock": true,
+        "msgs": [
+            "Hello"
+        ]
+    },
+    {
+        "name": "Talking Doll",
+        "price": 50,
+        "labels": [
+            "Doll",
+            "Baby"
+        ],
+        "createdAt": 1695227219264,
+        "inStock": true,
+        "_id": "A102",
+        "msgs": [
+            "Hello"
+        ]
+    },
+    {
+        "name": "Toy gun",
+        "price": 99.99,
+        "labels": [
+            "On wheels"
+        ],
+        "createdAt": 1695213149264,
+        "inStock": true,
+        "_id": "A104",
+        "msgs": [
+            "Hello"
+        ]
+    },
+    {
+        "name": "new toy stocked",
+        "labels": [],
+        "price": 400,
+        "_id": "PwD1c",
+        "createdAt": 1695291308759,
+        "msgs": [
+            "Hello"
+        ],
+        "inStock": false
+    }
+]

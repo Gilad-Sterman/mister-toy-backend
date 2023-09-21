@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Teddy Bear",
+        "price": 0,
+        "labels": ["Baby"],
+        "createdAt": 1695227249264,
+        "inStock": true,
+        "_id": "A101"
+    },
+    {
+        "name": "Talking Doll",
+        "price": 0,
+        "labels": ["Doll", "Baby"],
+        "createdAt": 1695227219264,
+        "inStock": true,
+        "_id": "A102"
+    },
+    {
+        "name": "Action figure",
+        "price": 0,
+        "labels": ["Battery Powered"],
+        "createdAt": 1695127249264,
+        "inStock": false,
+        "_id": "A103"
+    },
+    {
+        "name": "Toy gun",
+        "price": 0,
+        "labels": ["Outdoor"],
+        "createdAt": 1695213149264,
+        "inStock": true,
+        "_id": "A104"
+    }
+]
