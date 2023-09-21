@@ -12,7 +12,7 @@ export const toyService = {
 
 function query(filterBy) {
     let toysToreturn = toys
-    console.log(filterBy)
+    // console.log(filterBy)
     if (filterBy.labels) {
         toysToreturn = toysToreturn.filter(toy => toy.labels.some(label => filterBy.labels.includes(label)))
     }
