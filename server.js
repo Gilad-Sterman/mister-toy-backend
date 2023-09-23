@@ -22,7 +22,6 @@ app.use(express.static('public'))
 
 
 app.get('/api/toy', (req, res) => {
-    // const { txt, maxPrice } = req.query
     const filterBy = req.query
     toyService.query(filterBy)
         .then(toys => {
@@ -37,12 +36,13 @@ app.get('/api/toy', (req, res) => {
 app.post('/api/toy', (req, res) => {
     // const loggedinUser = userService.validateToken(req.cookies.loginToken)
     // if (!loggedinUser) return res.status(401).send('Cannot add car')
-    const { name, labels, price } = req.body
+    const { name, labels, price, inStock } = req.body
 
     const toy = {
         name,
         labels,
-        price: +price
+        price: +price,
+        inStock
     }
     toyService.save(toy)
         .then(savedToy => {
@@ -57,7 +57,6 @@ app.post('/api/toy', (req, res) => {
 app.put('/api/toy', (req, res) => {
     // const loggedinUser = userService.validateToken(req.cookies.loginToken)
     // if (!loggedinUser) return res.status(401).send('Cannot update car')
-
     const { name, labels, price, _id, createdAt, inStock } = req.body
     const toy = {
         _id,

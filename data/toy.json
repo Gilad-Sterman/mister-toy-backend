@@ -10,7 +10,7 @@
         "msgs": [
             "Hello"
         ],
-        "inStock": true
+        "inStock": false
     },
     {
         "name": "Gilad's Action figure",
@@ -20,7 +20,7 @@
             "Puzzle"
         ],
         "createdAt": 1695127249264,
-        "inStock": false,
+        "inStock": true,
         "_id": "A103",
         "msgs": [
             "Hello"
@@ -56,7 +56,7 @@
     },
     {
         "name": "Talking Doll",
-        "price": 50,
+        "price": 5000,
         "labels": [
             "Doll",
             "Baby"
@@ -67,6 +67,17 @@
         "msgs": [
             "Hello"
         ]
+    },
+    {
+        "name": "Toy Phone",
+        "labels": [
+            "Box game",
+            "Art"
+        ],
+        "price": 34,
+        "inStock": true,
+        "_id": "Blz1a",
+        "createdAt": 1695460038455
     },
     {
         "name": "Toy gun",
@@ -82,14 +93,13 @@
         ]
     },
     {
-        "name": "new toy stocked",
-        "labels": [],
-        "price": 400,
-        "_id": "PwD1c",
-        "createdAt": 1695291308759,
-        "msgs": [
-            "Hello"
+        "name": "Toy Phone in stock",
+        "labels": [
+            "Art"
         ],
-        "inStock": false
+        "price": 457,
+        "inStock": true,
+        "_id": "Y9jzS",
+        "createdAt": 1695460783508
     }
 ]
