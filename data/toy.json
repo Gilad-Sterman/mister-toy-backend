@@ -2,7 +2,8 @@
     {
         "name": "Chess set",
         "labels": [
-            "Art"
+            "Art",
+            "On wheels"
         ],
         "price": 45.5,
         "_id": "vT7yd",
@@ -10,7 +11,7 @@
         "msgs": [
             "Hello"
         ],
-        "inStock": false
+        "inStock": true
     },
     {
         "name": "Gilad's Action figure",
@@ -49,21 +50,7 @@
         "price": 44.99,
         "_id": "hNYc5",
         "createdAt": 1695231510913,
-        "inStock": true,
-        "msgs": [
-            "Hello"
-        ]
-    },
-    {
-        "name": "Talking Doll",
-        "price": 5000,
-        "labels": [
-            "Doll",
-            "Baby"
-        ],
-        "createdAt": 1695227219264,
-        "inStock": true,
-        "_id": "A102",
+        "inStock": false,
         "msgs": [
             "Hello"
         ]
@@ -80,6 +67,16 @@
         "createdAt": 1695460038455
     },
     {
+        "name": "Toy Phone in stock",
+        "labels": [
+            "Art"
+        ],
+        "price": 457,
+        "inStock": true,
+        "_id": "Y9jzS",
+        "createdAt": 1695460783508
+    },
+    {
         "name": "Toy gun",
         "price": 99.99,
         "labels": [
@@ -93,13 +90,14 @@
         ]
     },
     {
-        "name": "Toy Phone in stock",
+        "name": "gilads toy",
         "labels": [
-            "Art"
+            "Puzzle",
+            "Box game"
         ],
-        "price": 457,
-        "inStock": true,
-        "_id": "Y9jzS",
-        "createdAt": 1695460783508
+        "price": 57.9,
+        "inStock": false,
+        "_id": "H4Fht",
+        "createdAt": 1695749815570
     }
 ]
