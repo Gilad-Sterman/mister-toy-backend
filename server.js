@@ -18,19 +18,25 @@ app.use(cookieParser())
 app.use(express.json())
 app.use(express.static('public'))
 
-if (process.env.NODE_ENV === 'production') {
-    // Express serve static files on production environment
-    app.use(express.static(path.resolve(__dirname, 'public')))
-    console.log('__dirname: ', __dirname)
-} else {
-    // Configuring CORS
-    const corsOptions = {
-        // Make sure origin contains the url your frontend is running on
-        origin: ['http://127.0.0.1:5173', 'http://localhost:5173','http://127.0.0.1:3000', 'http://localhost:3000'],
-        credentials: true
-    }
-    app.use(cors(corsOptions))
-}
+// if (process.env.NODE_ENV === 'production') {
+//     // Express serve static files on production environment
+//     app.use(express.static(path.resolve(__dirname, 'public')))
+//     console.log('__dirname: ', __dirname)
+// } else {
+//     // Configuring CORS
+//     const corsOptions = {
+//         // Make sure origin contains the url your frontend is running on
+//         origin: ['http://127.0.0.1:5173', 'http://localhost:5173','http://127.0.0.1:3000', 'http://localhost:3000'],
+//         credentials: true
+//     }
+//     app.use(cors(corsOptions))
+// }
+
+
+// Express serve static files on production environment
+app.use(express.static(path.resolve(__dirname, 'public')))
+console.log('__dirname: ', __dirname)
+
 
 import { toyRoutes } from './api/toy/toy.routes.js'
 
