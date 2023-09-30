@@ -1,7 +1,7 @@
 import MongoClient from 'mongodb'
-import { logger } from '../../services/logger.service.js'
 
 import { config } from '../config/index.js'
+import { logger } from './logger.service.js'
 
 export const dbService = {
     getCollection
