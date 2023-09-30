@@ -1,4 +1,5 @@
 import MongoClient from 'mongodb'
+import { logger } from '../../services/logger.service.js'
 
 import { config } from '../config/index.js'
 
