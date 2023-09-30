@@ -12,10 +12,12 @@ export async function getToys(req, res) {
             labels: req.query.labels || 'all',
         }
         logger.debug('Getting Toys', filterBy)
+        console.log('Getting Toys', filterBy)
         const toys = await toyService.query(filterBy)
         res.json(toys)
     } catch (err) {
         logger.error('Failed to get toys', err)
+        console.log('Failed to get toys', err)
         res.status(500).send({ err: 'Failed to get toys' })
     }
 }

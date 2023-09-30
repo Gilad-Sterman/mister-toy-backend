@@ -15,6 +15,7 @@ async function getCollection(collectionName) {
         return collection
     } catch (err) {
         logger.error('Failed to get Mongo collection', err)
+        console.log('Failed to get Mongo collection', err)
         throw err
     }
 }

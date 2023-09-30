@@ -16,12 +16,13 @@ async function query(filterBy = { txt: '' }) {
                 { inStock: (filterBy.inStock === 'all') ? false : filterBy.inStock }],
         }
         if (filterBy.labels !== 'all') criteria.labels = { $in: filterBy.labels }
-        
+
         const collection = await dbService.getCollection('toy')
         let toys = await collection.find(criteria).sort({ [sortBy]: 1 }).toArray()
         return toys
     } catch (err) {
         logger.error('cannot find toys', err)
+        console.log('cannot find toys', err)
         throw err
     }
 }
