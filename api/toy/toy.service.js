@@ -22,7 +22,6 @@ async function query(filterBy = { txt: '' }) {
         return toys
     } catch (err) {
         logger.error('cannot find toys', err)
-        console.log('cannot find toys', err)
         throw err
     }
 }

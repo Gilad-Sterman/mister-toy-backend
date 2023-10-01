@@ -1,0 +1,146 @@
+[{
+  "_id": {
+    "$oid": "651688b956edf1a81c809ad9"
+  },
+  "name": "Toy Phone",
+  "price": 179.5,
+  "labels": [
+    "Puzzle"
+  ],
+  "createdAt": {
+    "$numberLong": "1695975609744"
+  },
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "65168f229245aba73892831d"
+  },
+  "name": "Chess set",
+  "price": 109.9,
+  "labels": [
+    "Box game",
+    "Puzzle"
+  ],
+  "createdAt": {
+    "$numberLong": "1695977250061"
+  },
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "65168f4d9245aba73892831e"
+  },
+  "name": "Gilads play set",
+  "price": 54.99,
+  "labels": [
+    "Doll",
+    "Puzzle"
+  ],
+  "createdAt": {
+    "$numberLong": "1695977293253"
+  },
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "65168f749245aba73892831f"
+  },
+  "name": "Edited by admin ",
+  "price": 19.9,
+  "labels": [
+    "Art",
+    "On wheels"
+  ],
+  "createdAt": {
+    "$numberLong": "1695977332998"
+  },
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "65169243d8c54ea07c1ca460"
+  },
+  "name": "Hula Hoop",
+  "price": 39.9,
+  "labels": [
+    "Art"
+  ],
+  "createdAt": {
+    "$numberLong": "1695978051831"
+  },
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "6516926fd8c54ea07c1ca461"
+  },
+  "name": "Talking Doll",
+  "price": 65,
+  "labels": [
+    "Baby",
+    "Doll"
+  ],
+  "createdAt": {
+    "$numberLong": "1695978095381"
+  },
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "651693415833f095943aabb7"
+  },
+  "name": "Toy Bike",
+  "price": 170,
+  "labels": [
+    "On wheels",
+    "Baby"
+  ],
+  "createdAt": {
+    "$numberLong": "1695978305834"
+  },
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "651693cc5833f095943aabb8"
+  },
+  "name": "Teddy Bear",
+  "price": 34.95,
+  "labels": [
+    "Doll",
+    "Baby"
+  ],
+  "createdAt": {
+    "$numberLong": "1695978444523"
+  },
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "6516958e53d06432d0e7279b"
+  },
+  "name": "Xylophone",
+  "price": 79.99,
+  "labels": [
+    "Baby"
+  ],
+  "createdAt": {
+    "$numberLong": "1695978894671"
+  },
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "651695de53d06432d0e7279c"
+  },
+  "name": "100 piece Puzzle",
+  "price": 42,
+  "labels": [
+    "Puzzle"
+  ],
+  "createdAt": {
+    "$numberLong": "1695978974804"
+  },
+  "inStock": false
+}]
