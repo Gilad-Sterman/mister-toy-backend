@@ -1,9 +1,10 @@
-import {logger} from '../../services/logger.service.js'
+import { logger } from '../../services/logger.service.js'
 // import {socketService} from '../../services/socket.service.js'
-import {userService} from '../user/user.service.js'
-import {authService} from '../auth/auth.service.js'
-import {reviewService} from './review.service.js'
+import { userService } from '../user/user.service.js'
+import { authService } from '../auth/auth.service.js'
+import { reviewService } from './review.service.js'
 import { toyService } from '../toy/toy.service.js'
+import { socketService } from '../../services/socket.service.js'
 
 export async function getReviews(req, res) {
     try {
@@ -16,19 +17,20 @@ export async function getReviews(req, res) {
 }
 
 export async function addReview(req, res) {
-    
-    // let {loggedinUser} = req
-    console.log(req.body)
-    let loggedinUser = await userService.getById(req.body._id)
- 
+
+    let { loggedinUser } = req
+    // console.log(req.body)
+    // let loggedinUser = await userService.getById(req.body._id)
+
     try {
         let review = req.body
+        console.log(review)
         review.byUserId = loggedinUser._id
         review = await reviewService.add(review)
-        
+
         // prepare the updated review for sending out
         review.aboutToy = await toyService.getById(review.aboutToyId)
-        
+
         // Give the user credit for adding a review
         // var user = await userService.getById(review.byUserId)
         // user.score += 10
@@ -46,9 +48,11 @@ export async function addReview(req, res) {
 
         // socketService.broadcast({type: 'review-added', data: review, userId: loggedinUser._id})
         // socketService.emitToUser({type: 'review-about-you', data: review, userId: review.aboutUser._id})
-        
+
         // const fullUser = await userService.getById(loggedinUser._id)
         // socketService.emitTo({type: 'user-updated', data: fullUser, label: fullUser._id})
+        console.log(review)
+        socketService.broadcast({ type: 'review-added', data: review, userId: loggedinUser._id })
 
         res.send(review)
 
@@ -59,10 +63,13 @@ export async function addReview(req, res) {
 }
 
 export async function deleteReview(req, res) {
+    let { loggedinUser } = req
     try {
         const deletedCount = await reviewService.remove(req.params.id)
         if (deletedCount === 1) {
             res.send({ msg: 'Deleted successfully' })
+            socketService.broadcast({ type: 'review-removed', data: req.params.id, userId: loggedinUser._id })
+            // socketService.emitTo({ type: 'review-removed', data: req.params.id })
         } else {
             res.status(400).send({ err: 'Cannot remove review' })
         }
